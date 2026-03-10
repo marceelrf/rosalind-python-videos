@@ -1,2 +1,5 @@
 # Rosalind Python Videos
 
+## Problems solved
+
+- [DNA](https://rosalind.info/problems/dna/)
