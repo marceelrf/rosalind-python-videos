@@ -36,7 +36,10 @@ def reverse_complement(dna_string: str) -> str:
     if not validate_dna_string(dna_string):
         raise ValueError("Error: The sequence is NOT a valid DNA string!!!!!")
     
-    complement_map = {'A': 'T', 'T': 'A', 'C': 'G', 'G': 'C','a': 't', 't': 'a', 'c': 'g', 'g': 'c'}
+    complement_map = {'A':'T','T':'A','C':'G','G':'C'}
     
     return "".join(complement_map.get(base, base) for base in reversed(dna_string))
 
+seq = "AAAACCCGGT"
+
+reverse_complement("AAAACCCGGT")
